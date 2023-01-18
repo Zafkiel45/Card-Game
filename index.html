@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <h1 id="title-header">Cartão do jogador</h1>
+    </header>
+    <section>
+        <form action=""> <!-- Estudar o atributo "action" -->
+            <div id="container-main">
+                <label for="name" class="label-text">Nome</label>
+                <input type="text" name="name" id="name">
+                <label for="email" class="label-text">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div id="container-adicional">
+                <label for="homem" class="label-text">Masculino</label>
+                <input type="radio" name="sex" id="homem" checked>
+                <label for="mulher" class="label-text">Feminino</label>
+                <input type="radio" name="sex" id="mulher">
+                <div id="select">
+                    <select name="idade" id="idade">
+                        <option value="nulo" disabled selected>---</option>
+                        <option value="">-12</option>
+                        <option value="">12</option>
+                        <option value="">14</option>
+                        <option value="">16</option>
+                        <option value="">18</option>
+                        <option value="">+18</option>
+                    </select>
+                </div>
+            </div>
+            <div id="categoria">
+                <label for="RPG">RPG</label>
+                <input type="checkbox" name="cat" id="RPG">
+                <label for="MMORPG">MMORPG</label>
+                <input type="checkbox" name="cat" id="MMORPG">
+                <label for="cartas">CARTAS</label>
+                <input type="checkbox" name="cat" id="cartas">
+                <label for="simulação">SIMULAÇÃO</label>
+                <input type="checkbox" name="cat" id="simulação">
+                <label for="mundo-aberto">MUNDO ABERTO</label>
+                <input type="checkbox" name="cat" id="mundo-aberto">
+            </div>
+            <button type="submit">
+                Confirmar
+            </button>
+        </form>
+    </section>
+</body>
+</html>
