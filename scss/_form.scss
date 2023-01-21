@@ -1,0 +1,47 @@
+#card-1 {
+    width: 500px;
+    width: 500px;
+    background-color: #7A47AD;
+    border-radius: $border-radius;
+    padding: $generic-padding;
+    margin: $generic-margin;
+    font-family: $font;
+    color: $generic-color;
+    box-shadow: 1px 1px 2px 2px #320a5b;
+
+    #form-player {
+        margin-left: 30px;
+    }
+
+    #input-base {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #input-name,
+    #input-password {
+        display: flex;
+        #name,
+        #password {
+            background-color: #7277E0;
+            border: 1px solid #4d2178;
+            border-left: none;
+            appearance: none;
+            color: white;
+            text-rendering: optimizeSpeed;
+        }
+
+        .svg-icon {
+            width: 25px;
+            height: 25px;
+            object-fit: cover;
+            background-color: $background-color-input;
+            border: 1px solid $border-input-color;
+            border-right: none;
+            padding: 2px;
+        }
+    }
+
+
+}

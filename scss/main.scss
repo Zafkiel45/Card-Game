@@ -1,0 +1,12 @@
+$font: arial, helvetica, sans-serif;
+$generic-margin: 3%;
+$generic-padding: 1.25em;
+$generic-color: white;
+$personalized-color: purple;
+$title-size: 1.5em;
+$border-radius: 1.25em;
+$background-color-input: #7277E0;
+$border-input-color: #4d2178;
+
+@import 'base';
+@import 'form';
