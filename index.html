@@ -17,13 +17,36 @@
                 <label for="name">Nome</label>
                 <div id="input-name">
                     <img src="SVG/user.svg" alt="" class="svg-icon">
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required minlength="2" maxlength="20">
                 </div>
                 <label for="password">Senha</label>
                 <div id="input-password">
                     <img src="SVG/cadeado.svg" alt="" class="svg-icon">
-                    <input type="password" name="senha" id="password">
+                    <input type="password" name="senha" id="password" required minlength="2" maxlength="20">
                 </div>                
+            </div>
+            <div id="input-adicional">
+                <div id="input-radio">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="sex" id="masc" checked>
+                    <label for="femi">Feminino</label>
+                    <input type="radio" name="sex" id="femi">
+                </div>
+                <div id="years">
+                    <select name="idade" id="idade">
+                        <option value="none" disabled selected required>---</option>
+                        <option value="-10">-10</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option value="+18">+18</option>
+                    </select>
+                </div>
+            </div>
+            <div id="button-container">
+                <button type="submit">Confirmar</button>
             </div>
         </form>
     </div>
