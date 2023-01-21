@@ -1,0 +1,42 @@
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    background-color:#7A47AD;
+    border-radius: $border-radius;
+    padding: 50px;
+    margin: $generic-margin;
+    box-shadow: 1px 1px 2px 2px #320a5b;
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgb(223, 4, 252);
+        border-radius: 100%;
+        width: 70px;
+        height: 70px;
+        padding: $generic-padding;
+        margin: auto;
+        background-color: #320a5b;
+        
+        .img {
+            object-fit: cover;
+        }
+    }
+
+    .title-player {
+        color: $generic-color;
+        font-size: 1.25em;
+        text-shadow: 1px 1px 1px purple;
+    }
+
+    .card-info {
+        height: 50px;
+        background-color: $background-color-input;
+        padding: 10px;
+        border-radius: $border-radius;
+        border: 1px solid $border-input-color;
+        box-shadow: 1px 1px 2px 2px #320a5b;
+    }
+}   
