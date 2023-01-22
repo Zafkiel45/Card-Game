@@ -80,9 +80,9 @@
 
         button {
             width: 200px;
-            background-image: linear-gradient(to bottom, rgb(232, 20, 218), rgb(181, 0, 181), purple);
+            background-image: linear-gradient(to bottom, #940bdd 5%, #5a0c84, #400b5c);
             border-radius: $border-radius;
-            border: 1px solid rgb(223, 4, 252);
+            border: 1px solid #9e0dec;
             cursor: pointer;
             appearance: none;
             color: white;
@@ -92,7 +92,7 @@
             transition: background-image 2s;
 
             &:hover {
-                background-image: linear-gradient(to bottom, purple, rgb(181, 0, 181), rgb(232, 20, 218));
+                background-image: linear-gradient(to bottom, #370950 5%, #5a0c84, #940bdd);
             }
 
             &:active {

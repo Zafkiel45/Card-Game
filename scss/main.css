@@ -95,9 +95,9 @@ header {
 }
 #card-1 #button-container button {
   width: 200px;
-  background-image: linear-gradient(to bottom, rgb(232, 20, 218), rgb(181, 0, 181), purple);
+  background-image: linear-gradient(to bottom, #940bdd 5%, #5a0c84, #400b5c);
   border-radius: 1.25em;
-  border: 1px solid rgb(223, 4, 252);
+  border: 1px solid #9e0dec;
   cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -109,7 +109,7 @@ header {
   transition: background-image 2s;
 }
 #card-1 #button-container button:hover {
-  background-image: linear-gradient(to bottom, purple, rgb(181, 0, 181), rgb(232, 20, 218));
+  background-image: linear-gradient(to bottom, #370950 5%, #5a0c84, #940bdd);
 }
 #card-1 #button-container button:active {
   position: relative;
