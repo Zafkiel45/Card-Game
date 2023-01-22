@@ -8,62 +8,68 @@
     <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
-    <div id="card-1">
-        <form action="" id="form-player">
-            <div id="input-base">
-                <label for="name">Nome</label>
-                <div id="input-name">
-                    <img src="SVG/user.svg" alt="" class="svg-icon">
-                    <input type="text" name="name" id="name" required minlength="2" maxlength="20">
+    <header>
+        <h1>Cartão do jogador</h1>
+    </header>
+    <div class="container-main">
+        <div id="card-1">
+            <form action="" id="form-player">
+                <div id="input-base">
+                    <label for="name">Nome</label>
+                    <div id="input-name">
+                        <img src="SVG/user.svg" alt="" class="svg-icon">
+                        <input type="text" name="name" id="name" required minlength="2" maxlength="20">
+                    </div>
+                    <label for="password">Senha</label>
+                    <div id="input-password">
+                        <img src="SVG/cadeado.svg" alt="" class="svg-icon">
+                        <input type="password" name="senha" id="password" required minlength="2" maxlength="20">
+                    </div>                
                 </div>
-                <label for="password">Senha</label>
-                <div id="input-password">
-                    <img src="SVG/cadeado.svg" alt="" class="svg-icon">
-                    <input type="password" name="senha" id="password" required minlength="2" maxlength="20">
-                </div>                
-            </div>
-            <div id="input-adicional">
-                <div id="input-radio">
-                    <label for="masc">Masculino</label>
-                    <input type="radio" name="sex" id="masc" checked>
-                    <label for="femi">Feminino</label>
-                    <input type="radio" name="sex" id="femi">
+                <div id="input-adicional">
+                    <div id="input-radio">
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="sex" id="masc" checked>
+                        <label for="femi">Feminino</label>
+                        <input type="radio" name="sex" id="femi">
+                    </div>
+                    <div id="years">
+                        <select name="idade" id="idade">
+                            <option value="none" disabled selected required>---</option>
+                            <option value="-10">-10</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="14">14</option>
+                            <option value="16">16</option>
+                            <option value="18">18</option>
+                            <option value="+18">+18</option>
+                        </select>
+                    </div>
                 </div>
-                <div id="years">
-                    <select name="idade" id="idade">
-                        <option value="none" disabled selected required>---</option>
-                        <option value="-10">-10</option>
-                        <option value="10">10</option>
-                        <option value="12">12</option>
-                        <option value="14">14</option>
-                        <option value="16">16</option>
-                        <option value="18">18</option>
-                        <option value="+18">+18</option>
-                    </select>
+                <div id="button-container">
+
+                    <button type="submit" onclick="confirma()">Confirmar</button>
                 </div>
+            </form>
+        </div>
+        <div class="card-2">
+            <div class="img-container">
+                <img src="img/user2.svg" alt="" class="img" id="user">
             </div>
-            <div id="button-container">
-                <button type="submit" onclick="confirma()">Confirmar</button>
+            <div class="name card-info">
+                <h1 class="title-player ">Nome</h1>
+                <p id="res-name"></p>
             </div>
-        </form>
+            <div class="gênero card-info">
+                <h1 class="title-player">Gênero</h1>
+                <p id="res-sex"></p>
+            </div>
+            <div class="idade card-info card-info">
+                <h1 class="title-player">Idade</h1>
+                <p id="res-idade"></p>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
     </div>
-    <div class="card-2">
-        <div class="img-container">
-            <img src="img/user2.svg" alt="" class="img" id="user">
-        </div>
-        <div class="name card-info">
-            <h1 class="title-player ">Nome</h1>
-            <p id="res-name"></p>
-        </div>
-        <div class="gênero card-info">
-            <h1 class="title-player">Gênero</h1>
-            <p id="res-sex"></p>
-        </div>
-        <div class="idade card-info card-info">
-            <h1 class="title-player">Idade</h1>
-            <p id="res-idade"></p>
-        </div>
-    </div>
-    <script src="js/script.js"></script>
 </body>
 </html>

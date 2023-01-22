@@ -3,7 +3,7 @@ let img = document.getElementById('user');
 function confirma() {
     let name = document.getElementById('name');
     let sexo = document.getElementsByName('sex');
-    let years = document.getElementById('idade');
+    let years = document.getElementById('idade').value;
     let res_name = document.getElementById('res-name');
     let res_sex = document.getElementById('res-sex');
     let res_idade = document.getElementById('res-idade');
@@ -18,9 +18,13 @@ function confirma() {
     if(sexo[0].checked){
         gen = 'Masculino'
         res_sex.innerHTML = `${gen}`
+        img.src = '../img/user-female.svg'
+
     } else {
         gen = 'Feminino'
         res_sex.innerHTML = `${gen}`
+        img.src = '../img/user-men.svg'
     }
 
+    res_idade.innerHTML = `${years}`
 }

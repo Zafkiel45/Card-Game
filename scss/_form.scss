@@ -1,13 +1,14 @@
 #card-1 {
     width: fit-content;
-    background-color: #7A47AD;
+    background: rgb(91,9,130);
+    background: linear-gradient(239deg, rgba(91,9,130,1) 0%, rgba(121,9,102,1) 35%, rgba(169,0,255,1) 100%);
     border-radius: $border-radius;
     padding: $generic-padding;
     margin: $generic-margin;
     font-family: $font;
     color: $generic-color;
     box-shadow: 1px 1px 2px 2px #320a5b;
-
+    height: 330px;
     #form-player {
         padding: 30px;
     }
